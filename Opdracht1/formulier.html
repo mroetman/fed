@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aanmelden</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Aanmelden" />
+    <meta name="author" content="Maarten Roetman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/styles2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	
+		<header>
+    		<section>
+    			<img src="images/cmd_icon_letter_c.png" alt="">
+        		<img src="images/cmd_icon_letter_m.png" alt="">
+        		<img src="images/cmd_icon_letter_d.png" alt="">
+       		</section>
+
+			<form>
+        		<input type="text" placeholder="zoek en klik">
+    		</form>
+
+    		<a href="#">profielpagina Elena Harris</a>
+
+    		<nav>
+        		<ul>
+        	    	<li><a href="index.html">Home</a></li>
+      		      	<li><a href="opleiding.html">Opleiding</a></li>
+            		<li><a href="oprogram.html">Onderwijsprogramma</a></li>
+            		<li><a href="org.html">Organisatie</a></li>
+            		<li><a href="formulier.html">Stages en projecten</a></li>
+        		</ul>
+    		</nav>  	
+		</header>
+		<section>
+			<article>
+				<header>
+					<h1>Aanmelden</h1>
+				</header>
+				<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+			<p class="italic">CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
+			<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="contact">contact</a> met ons op.</p>
+		</article>
+	</section>
+	<form>
+    	<fieldset>
+    		<legend>Contactgegevens</legend>
+    		<p>
+    		<label for="name">Naam</label>
+    		<input type="text" id="name" required/>
+			</p>
+			<p>
+    		<label for="company">Bedrijf</label>
+    		<input type="text" id="company" required/>
+    		</p>
+    		<p>
+    		<label for="adress">Adres</label>
+    		<input type="text" id="adress"/>
+    		</p>
+    		<p>
+    		<label for="zip">Postcode</label>
+    		<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="zip"/>
+    		</p>
+    		<p>
+    		<label for="city">Plaats</label>
+    		<input type="text" id="city"/>
+    		</p>
+    		<p>
+    		<label for="tel">Telefoon</label>
+    		<input type="tel"  id="tel" required/>
+			</p>
+			<p>
+    		<label for="email">E-mail</label>
+    		<input type="email" id="email" required/>
+    		</p>
+    	</fieldset>
+    	<fieldset>
+			<legend>Aanmelden</legend>
+			<p>
+			<label>Ik wil mijn aanmelden:</label><br />
+			<label><input type="radio" name="register">voor een project</label>
+			<label><input type="radio" name="register">als stagebedrijf</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Project</legend>
+			<p>
+			<label for="titel">Titel</label>
+    		<input type="text" id="titel"/>
+			</p>
+			<p>
+    		<label for="assignmentdef">Opdrachtomschrijving</label>
+    		<input type="text" id="assignmentdef"/>
+    		</p>
+			<p>
+    		<label for="userdef">Doelgroepomschrijving</label>
+    		<input type="text" id="userdef"/>
+    		</p>
+			<p>
+    		<label for="target">Doelstelling</label>
+    		<input type="text" id="target"/>
+    		</p>
+			<p>
+    		<label for="time">Looptijd</label>
+    		<input type="text"  id="time"/>
+			</p>
+			<p>
+    		<label for="deadline">Deadline</label>
+    		<input type="text" id="deadline"/>
+			</p>
+			<p>
+			<label>Geschikt voor:</label><br />
+			<label><input type="checkbox" id="firstyearpr">eerstejaars studenten</label>
+			<label><input type="checkbox" id="secondyearpr">tweedejaars studenten</label>
+			<label><input type="checkbox" id="thirdyearpr">derdejaars studenten</label>
+			<label><input type="checkbox" id="gradyearpr">afstudeer studenten</label>
+			<label><input type="checkbox" id="unknownpr">onbekend</label>
+			<p>
+			<label for="commentspr">Opmerkingen:</label>
+			</p>
+			<textarea id="commentspr" cols="30" rows="5"></textarea>
+     	</fieldset>
+    	<fieldset>
+    		<legend>Stage</legend>
+    		<p>
+    		Geschikt voor:<br />
+			<label><input type="checkbox" id="secondyearis">tweedejaars studenten</label>
+			<label><input type="checkbox" id="gradyearis">afstudeer studenten</label>
+			<label><input type="checkbox" id="unknownis">onbekend</label>
+			</p>
+			<p>
+			<label for="durationis">Hoe lang is de stage?</label>
+            <select id="durationis">
+                <option value="10 weken">10 weken</option>
+                <option value="20 weken">20 weken</option>
+            </select>
+			</p>
+			<p>
+			<label for="worktype">Beschrijving werkzaamheden</label>
+    		<input type="text" id="worktype"/>
+			</p>
+			<p>
+    		<label for="companyname">Bedrijfsnaam</label>
+    		<input type="text" id="companyname"/>
+  			</p>
+			<p>
+    		<label for="companyadress">Adres</label>
+    		<input type="text" id="companyadress"/>
+    		</p>
+			<p>
+    		<label for="companyzip">Postcode</label>
+    		<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="companyzip"/>
+    		</p>
+			<p>
+    		<label for="companycity">Plaats</label>
+    		<input type="text" id="companycity"/>
+    		</p>
+			<p>
+    		<label for="sector">Sector</label>
+    		<input type="text"  id="sector"/>
+			</p>
+			<p>
+    		<label for="corebus">Core business</label>
+    		<input type="text" id="corebus"/>
+			</p>
+			<p>
+			<label for="commentsis">Opmerkingen:</label>
+			</p>
+			<textarea id="commentsis" cols="30" rows="5"></textarea>
+		</fieldset>
+		<input type="submit" value="aanmelden" />
+    </form>
+	<aside>
+	</aside>
+	<footer>
+	</footer>
+</body>
+</html>
